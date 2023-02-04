@@ -31,3 +31,8 @@ class BinaryTreeNode():
                 return self.right.search(find)
             else:
                 return False
+        elif(find < self.data):
+            if(self.left):
+                return self.left.search(find)
+            else:
+                return False

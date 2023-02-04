@@ -36,3 +36,9 @@ class BinaryTreeNode():
                 return self.left.search(find)
             else:
                 return False
+    
+    # In order traversal
+    def in_order(self):
+        items = []
+        if(self.left):
+            items+=self.left.in_order()

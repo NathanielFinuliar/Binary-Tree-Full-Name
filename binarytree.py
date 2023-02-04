@@ -42,3 +42,10 @@ class BinaryTreeNode():
         items = []
         if(self.left):
             items+=self.left.in_order()
+
+        items.append(self.data)
+
+        if(self.right):
+            items+=self.right.in_order()
+        
+        return items

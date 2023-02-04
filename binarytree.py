@@ -74,3 +74,9 @@ class BinaryTreeNode():
         if(self.right is None):
             return self.data
         return self.right.max()
+
+    # Find min value
+    def min(self):
+        if(self.left is None):
+            return self.data
+        return self.left.min()

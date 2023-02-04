@@ -58,3 +58,7 @@ class BinaryTreeNode():
         if(self.right):
             items+=self.right.pre_order()
         return items
+
+    # Post order traversal
+    def post_order(self):
+        items = []

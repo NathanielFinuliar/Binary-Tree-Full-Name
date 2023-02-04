@@ -115,3 +115,7 @@ if(__name__=="__main__"):
     print(f"Post Order Traversal:\t{name_tree.post_order()}")
     print("\nMin Letter:",name_tree.min())
     print("Max Letter:",name_tree.max())
+
+    letters_in = []
+    letters_not = []
+    alphabet = "abcdefghijklmnopqrstuvwxyz".upper()

@@ -113,3 +113,5 @@ if(__name__=="__main__"):
     print(f"\nIn Order Traversal:\t{name_tree.in_order()}")
     print(f"Pre Order Traversal:\t{name_tree.pre_order()}")
     print(f"Post Order Traversal:\t{name_tree.post_order()}")
+    print("\nMin Letter:",name_tree.min())
+    print("Max Letter:",name_tree.max())

@@ -101,3 +101,7 @@ class BinaryTreeNode():
             self.left = self.left.delete(max_val)
 
         return self
+
+if(__name__=="__main__"):
+    symbol = "_"
+    fullname = list("NathanielDFinuliar".upper())

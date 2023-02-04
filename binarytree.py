@@ -55,3 +55,6 @@ class BinaryTreeNode():
         items = list(self.data)
         if(self.left):
             items+=self.left.pre_order()
+        if(self.right):
+            items+=self.right.pre_order()
+        return items

@@ -25,3 +25,9 @@ class BinaryTreeNode():
     def search(self, find):
         if(self.data == find):
             return True
+
+        elif(find > self.data):
+            if(self.right):
+                return self.right.search(find)
+            else:
+                return False

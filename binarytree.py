@@ -110,3 +110,6 @@ if(__name__=="__main__"):
         name_tree.add_child(fullname[num])
 
     print(f"\nFULL NAME:\n{fullname}")
+    print(f"\nIn Order Traversal:\t{name_tree.in_order()}")
+    print(f"Pre Order Traversal:\t{name_tree.pre_order()}")
+    print(f"Post Order Traversal:\t{name_tree.post_order()}")

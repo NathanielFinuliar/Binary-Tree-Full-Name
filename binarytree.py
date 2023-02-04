@@ -68,3 +68,9 @@ class BinaryTreeNode():
             items+=self.right.post_order()
         items.append(self.data)
         return items
+
+    # Find max value
+    def max(self):
+        if(self.right is None):
+            return self.data
+        return self.right.max()

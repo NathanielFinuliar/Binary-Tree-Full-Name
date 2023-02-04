@@ -105,3 +105,8 @@ class BinaryTreeNode():
 if(__name__=="__main__"):
     symbol = "_"
     fullname = list("NathanielDFinuliar".upper())
+    name_tree = BinaryTreeNode(fullname[0])
+    for num in range(1, len(fullname)):
+        name_tree.add_child(fullname[num])
+
+    print(f"\nFULL NAME:\n{fullname}")

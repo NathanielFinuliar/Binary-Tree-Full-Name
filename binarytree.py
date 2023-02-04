@@ -15,3 +15,8 @@ class BinaryTreeNode():
                 self.left.add_child(data)
             else:
                 self.left = BinaryTreeNode(data)
+        else:
+            if(self.right):
+                self.right.add_child(data)
+            else:
+                self.right = BinaryTreeNode(data)

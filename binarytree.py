@@ -49,3 +49,9 @@ class BinaryTreeNode():
             items+=self.right.in_order()
         
         return items
+
+    # Pre order traversal
+    def pre_order(self):
+        items = list(self.data)
+        if(self.left):
+            items+=self.left.pre_order()

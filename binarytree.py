@@ -124,3 +124,8 @@ if(__name__=="__main__"):
             letters_in.append(letter)
         else:
             letters_not.append(letter)
+
+    print(f"\n{symbol*(3**4)}\n\nUsing name_tree search function to find letters that are in and not in my name\n")
+    print("Letters in my name (True):\t",letters_in)
+    print("Letters not in my name (False):\t",letters_not)
+    print(symbol*(3**4),'\n')

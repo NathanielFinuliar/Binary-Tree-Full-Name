@@ -62,3 +62,9 @@ class BinaryTreeNode():
     # Post order traversal
     def post_order(self):
         items = []
+        if(self.left):
+            items+=self.left.post_order()
+        if(self.right):
+            items+=self.right.post_order()
+        items.append(self.data)
+        return items

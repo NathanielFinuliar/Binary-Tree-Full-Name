@@ -119,3 +119,8 @@ if(__name__=="__main__"):
     letters_in = []
     letters_not = []
     alphabet = "abcdefghijklmnopqrstuvwxyz".upper()
+    for letter in alphabet:
+        if(name_tree.search(letter)):
+            letters_in.append(letter)
+        else:
+            letters_not.append(letter)

@@ -88,3 +88,10 @@ class BinaryTreeNode():
         elif(item > self.data):
             if(self.right):
                 self.right = self.right.delete(item)
+        else:
+            if(self.left is None and self.right is None):
+                return None
+            elif self.left is None:
+                return self.right
+            elif self.right is None:
+                return self.right

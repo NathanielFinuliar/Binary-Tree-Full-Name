@@ -95,3 +95,7 @@ class BinaryTreeNode():
                 return self.right
             elif self.right is None:
                 return self.right
+
+            max_val = self.left.max()
+            self.data = max_val
+            self.left = self.left.delete(max_val)

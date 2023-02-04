@@ -80,3 +80,8 @@ class BinaryTreeNode():
         if(self.left is None):
             return self.data
         return self.left.min()
+
+    def delete(self, item):
+        if(item < self.data):
+            if(self.left):
+                self.left = self.left.delete(item)

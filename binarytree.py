@@ -1,4 +1,6 @@
+# Final Commit
 # Coded by: Nathaniel Finuliar
+# BSCOE 2-2
 
 class BinaryTreeNode():
     def __init__(self, data):

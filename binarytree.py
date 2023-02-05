@@ -129,3 +129,8 @@ if(__name__=="__main__"):
     print("Letters in my name (True):\t",letters_in)
     print("Letters not in my name (False):\t",letters_not)
     print(symbol*(3**4),'\n')
+
+    for item in name_tree.in_order():
+        name_tree.delete(item)
+        print(f"In Order Traversal deleted '{item}':\t{name_tree.in_order()}")
+

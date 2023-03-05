@@ -12,11 +12,15 @@ class BinaryTreeNode():
     def add_child(self, data):
         if(data == self.data):
             return
+        
+        #Goes to left subtree (if data is < the value of current node)
         elif(data < self.data):
             if(self.left):
                 self.left.add_child(data)
             else:
                 self.left = BinaryTreeNode(data)
+
+        #Goes to right subtree (if data is > the value of current node)
         else:
             if(self.right):
                 self.right.add_child(data)
@@ -83,6 +87,7 @@ class BinaryTreeNode():
             return self.data
         return self.left.min()
 
+    #Delete function for Exercise 2
     def delete(self, item):
         if(item < self.data):
             if(self.left):

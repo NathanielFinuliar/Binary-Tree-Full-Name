@@ -121,3 +121,7 @@ def build_tree(elements):
     for i in range(1,len(elements)):
         main.add_child(elements[i])
     return main
+
+if (__name__ == '__main__'):
+    # symbol = "_"
+    num_list = list(range(10,50,5))

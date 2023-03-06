@@ -128,3 +128,5 @@ if (__name__ == '__main__'):
     print("NUMBER LIST: ",num_list)
     num_list = build_tree(num_list)
     print("\nTotal sum: ",num_list.calculate_sum())
+    print("\nMinimum Number: ",num_list.min())
+    print("Maximum Number: ",num_list.max())

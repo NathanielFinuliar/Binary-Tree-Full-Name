@@ -138,3 +138,9 @@ if (__name__ == '__main__'):
     num_in = []
     num_not = []
     numberlist = list(range(11,50))
+
+    for num in numberlist:
+        if(num_list.search(num)):
+            num_in.append(num)
+        else:
+            num_not.append(num)

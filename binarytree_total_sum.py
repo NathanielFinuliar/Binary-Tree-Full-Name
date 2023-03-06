@@ -130,3 +130,6 @@ if (__name__ == '__main__'):
     print("\nTotal sum: ",num_list.calculate_sum())
     print("\nMinimum Number: ",num_list.min())
     print("Maximum Number: ",num_list.max())
+    print(f"\nIn Order Traversal:\t{num_list.in_order_traversal()}")
+    print(f"Pre Order Traversal:\t{num_list.pre_order_traversal()}")
+    print(f"Post Order Traversal:\t{num_list.post_order_traversal()}")

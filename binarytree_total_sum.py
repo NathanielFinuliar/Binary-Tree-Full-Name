@@ -150,3 +150,7 @@ if (__name__ == '__main__'):
     print("Numbers not on my list (False):\t",num_not)
     print("_"*100)
     print("")
+
+    for item in num_list.in_order_traversal():
+        num_list.delete(item)
+        print(f"In Order Traversal deleted '{item}': {num_list.in_order_traversal()}")

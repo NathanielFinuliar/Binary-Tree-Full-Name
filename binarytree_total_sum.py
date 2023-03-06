@@ -125,3 +125,6 @@ def build_tree(elements):
 if (__name__ == '__main__'):
     # symbol = "_"
     num_list = list(range(10,50,5))
+    print("NUMBER LIST: ",num_list)
+    num_list = build_tree(num_list)
+    print("\nTotal sum: ",num_list.calculate_sum())

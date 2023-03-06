@@ -115,3 +115,9 @@ class BinaryTreeNode():
         for i in range(len(elements)):
             x += elements[i]
         return  x
+    
+def build_tree(elements): 
+    main = BinaryTreeNode(elements[0])
+    for i in range(1,len(elements)):
+        main.add_child(elements[i])
+    return main

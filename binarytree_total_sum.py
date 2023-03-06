@@ -1,0 +1,109 @@
+# CODED BY NATHANIEL D. FINULIAR
+# BSCOE 2-2
+# SIR DAN MADRIGALEJOS
+
+#PROGRAM THAT APPLIES COMPUTE SUM METHOD
+#WHICH CALCULATES THE SUM OF ALL ELEMENTS
+#THE LIST CONTAINS NUMBERS INSTEAD OF LETTERS
+
+class BinaryTreeNode():
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
+
+    # Add child to the parent class
+    def add_child(self, data):
+        if(data == self.data):
+            return
+        elif(data < self.data):
+            if(self.left):
+                self.left.add_child(data)
+            else:
+                self.left = BinaryTreeNode(data)
+        else:
+            if(self.right):
+                self.right.add_child(data)
+            else:
+                self.right = BinaryTreeNode(data)
+
+    # Search for item in data
+    def search(self, find):
+        if(self.data == find):
+            return True
+
+        elif(find > self.data):
+            if(self.right):
+                return self.right.search(find)
+            else:
+                return False
+        elif(find < self.data):
+            if(self.left):
+                return self.left.search(find)
+            else:
+                return False
+    
+    # In order traversal
+    def in_order_traversal(self):
+        items = []
+        if(self.left):
+            items+=self.left.in_order_traversal()
+
+        items.append(self.data)
+
+        if(self.right):
+            items+=self.right.in_order_traversal()
+        
+        return items
+
+    # Pre order traversal
+    def pre_order_traversal(self):
+        items = [self.data]
+        if(self.left):
+            items+=self.left.pre_order_traversal()
+        if(self.right):
+            items+=self.right.pre_order_traversal()
+        return items
+
+    # Post order traversal
+    def post_order_traversal(self):
+        items = []
+        if(self.left):
+            items+=self.left.post_order_traversal()
+        if(self.right):
+            items+=self.right.post_order_traversal()
+        items.append(self.data)
+        return items
+
+    # Find max value
+    def max(self):
+        if(self.right is None):
+            return self.data
+        return self.right.max()
+
+    # Find min value
+    def min(self):
+        if(self.left is None):
+            return self.data
+        return self.left.min()
+
+    def delete(self, item):
+        if(item < self.data):
+            if(self.left):
+                self.left = self.left.delete(item)
+        elif(item > self.data):
+            if(self.right):
+                self.right = self.right.delete(item)
+        else:
+            if(self.left is None and self.right is None):
+                return None
+            elif self.left is None:
+                return self.right
+            elif self.right is None:
+                return self.right
+
+            max_val = self.left.max()
+            self.data = max_val
+            self.left = self.left.delete(max_val)
+
+        return self

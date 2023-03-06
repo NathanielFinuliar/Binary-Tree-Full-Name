@@ -133,3 +133,8 @@ if (__name__ == '__main__'):
     print(f"\nIn Order Traversal:\t{num_list.in_order_traversal()}")
     print(f"Pre Order Traversal:\t{num_list.pre_order_traversal()}")
     print(f"Post Order Traversal:\t{num_list.post_order_traversal()}")
+    print("_"*100)
+
+    num_in = []
+    num_not = []
+    numberlist = list(range(11,50))

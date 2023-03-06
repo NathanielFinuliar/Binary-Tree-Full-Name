@@ -107,3 +107,11 @@ class BinaryTreeNode():
             self.left = self.left.delete(max_val)
 
         return self
+    
+    #calculates the sum of elements
+    def calculate_sum(self): 
+        elements = self.in_order_traversal()
+        x = 0
+        for i in range(len(elements)):
+            x += elements[i]
+        return  x

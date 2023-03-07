@@ -145,7 +145,7 @@ if (__name__ == '__main__'):
         else:
             num_not.append(num)
 
-    print("\nUsing num_list search function to find numbers that are in and not on my list\n")
+    print("\nUsing num_list search function to find numbers that are in and not on my number list\n")
     print("Numbers on my list (True):\t",num_in)
     print("Numbers not on my list (False):\t",num_not)
     print("_"*100)
